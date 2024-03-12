@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:"Poppins"  ;
+}
+@font-face {
+    font-family:"Poppins" ;
+    src: url("/font/poppins/poppins-regular-webfont.woff2") format("woff2"),
+         url("/font/poppins/poppins-regular-webfont.woff") format("woff"),
+}
+@font-face {
+    font-family:"Poppins-bold" ;
+    src: url("/font/poppins/poppins-bold-webfont.woff2") format("woff2"),
+         url("/font/poppins/poppins-bold-webfont.woff") format("woff"),
+}
+@font-face {
+    font-family:"Poppins-extrabold" ;
+    src: url("/font/poppins/poppins-extrabold-webfont.woff2") format("woff2"),
+         url("/font/poppins/poppins-extrabold-webfont.woff") format("woff"),
+}
+@font-face {
+    font-family:"Poppins-light" ;
+    src: url("/font/poppins/poppins-light-webfont.woff2") format("woff2"),
+         url("/font/poppins/poppins-light-webfont.woff") format("woff"),
+}
+@font-face {
+    font-family:"Poppins-medium" ;
+    src: url("/font/poppins/poppins-medium-webfont.woff2") format("woff2"),
+         url("/font/poppins/poppins-medium-webfont.woff") format("woff"),
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1180px;
+}
+#main{
+    color: #fff;
+    background-color: blue;
+    
+}
+#main .nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+#main .logo{
+    width: 10%;
+}
+#main .logo img{
+    width: 100%;
+    display: block;
+}
+#main .nav-item .nav-list ul {
+    display: flex;
+    gap: 30px;
+}
+#main .nav-item .nav-list ul li a{
+    color:#fff;
+    font-family: "Poppins";
+}
+#main .nav-item .nav-list ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#main .nav-item .login a{
+    background: #fff;
+    color: black;
+    padding: 13px;
+    border-radius: 20px;
+    font-family: "Poppins-medium";
+}
+#main #spotlight{
+    padding:140px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main #spotlight .content{
+    margin: 0 160px;
+}
+#main #spotlight .content h1{
+    font-family: "Poppins-extrabold";
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    word-spacing: 3px;
+    text-align: center;
+}
+#main #spotlight .content p{
+    font-family: "Poppins-light";
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.625;
+    margin-top: 50px;
+    word-spacing: 3px;
+}
+#main #spotlight .content .content-btn{
+    text-align: center;
+    margin-top: 40px;
+}
+#main #spotlight .content .content-btn a{ 
+    margin-right: 20px;
+    padding: 16px 32px;
+    border-radius: 28px;
+}
+#main #spotlight .content .content-btn a:last-child{ 
+    margin-right: 0;
+    
+}
+#main #spotlight .content .content-btn .btn-one {
+    background-color: #fff;
+    color: #000;
+}
+#main #spotlight .content .content-btn .btn-one:hover {
+    color:blue;
+    box-shadow: 20px 20px 50px rgb(63, 63, 63);
+}
+#main #spotlight .content .content-btn .btn-one i{
+    font-size: 20px;
+    margin-right: 14px;
+    margin-left: 20px;
+    color: #000;
+}
+#main #spotlight .content .content-btn .btn-two {
+    background-color: #000;
+    color: #fff;
+}
+#main #spotlight .content .content-btn .btn-two:hover {
+    opacity: 0.7;
+    box-shadow: 20px 20px 50px grey;
+}
+
+/* about.... */
+#about .container{
+    padding: 100px 0;
+    display: flex;
+    gap: 30px;
+}
+#about .container .left{
+    width: 50%;
+}
+#about .container .right{
+    width: 50%;
+}
+#about .container .left .about-img{
+    width:90%; 
+}
+#about .left .about-img img{
+    width: 100%;
+    display: block;
+}
+#about .container .right h3{
+    font-family: "Poppins-bold";
+    font-size: 40px;
+    width: 70%;
+    word-spacing: 2px;
+    line-height: 1.3;
+}
+#about .container .right p{
+    font-family: "Poppins";
+    width: 75%;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* connect...... */
+#connect{
+    background-color: #f6f6f6;
+}
+#connect .connect-container{
+    padding: 100px 0;
+    display: flex;
+    gap: 30px;
+}
+#connect .connect-container .left{
+    width: 50%;
+}
+#connect .connect-container .right{
+    width: 50%;
+}
+#connect .connect-container .left h3{
+    font-family: "Poppins-bold";
+    font-size: 40px;
+    width: 70%;
+    word-spacing: 2px;
+    line-height: 1.3;
+}
+#connect .connect-container .left p{
+    font-family: "Poppins";
+    width: 75%;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+#connect .connect-container .right .connect-img{
+    width:90%; 
+}
+#connect .connect-container .right .connect-img img{
+    width: 100%;
+    display: block;
+}
+
+/* fandom... */
+#fandom .fandom-container{
+    padding: 100px 0;
+    display: flex;
+    gap: 30px;
+}
+#fandom .fandom-container .left{
+    width: 50%;
+}
+#fandom .fandom-container .right{
+    width: 50%;
+}
+#fandom .fandom-container .left .about-img{
+    width:90%; 
+}
+#fandom .left .fandom-img img{
+    width: 100%;
+    display: block;
+}
+#fandom .fandom-container .right h3{
+    font-family: "Poppins-bold";
+    font-size: 40px;
+    width: 70%;
+    word-spacing: 2px;
+    line-height: 1.3;
+}
+#fandom .fandom-container .right p{
+    font-family: "Poppins";
+    width: 75%;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-top: 20px;
+    font-size: 18px;
+}
