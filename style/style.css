@@ -44,20 +44,26 @@ a,
 }
 #main{
     color: #fff;
-    background-color: #5865F2;   
+    background-color: #3646f1;   
+}
+#main header{
+    width: 100%;
+    /* padding: 20px; */
+    transition:  0.3s; 
 }
 #main .hero-image{
-    background-image: url("../images/home2.svg"),url("../images/home1.svg");
-    background-repeat: no-repeat,no-repeat;
-    background-position: -15% 100%, 120% 100%;
-    background-size:600px,600px;
+    background-image: url("../images/home2.svg"),url("../images/home1.svg"),url("../images/hero3.svg");
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: -15% 100%, 120% 100%,50% 100%;
+    background-size:600px,600px,auto;
 }
 #main .nav-item{
     display: flex;
     /* gap:50px; */
+    /* justify-content: center; */
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 #main .logo img{
     width: 100%;
@@ -66,6 +72,7 @@ a,
 #main .nav-item .nav-list ul {
     display: flex;
     gap: 30px;
+   margin-right: 50px;
 }
 #main .nav-item .nav-list ul li a{
     color:#fff;
@@ -74,6 +81,15 @@ a,
 #main .nav-item .nav-list ul li a:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+#main .nav-item .login{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#main .nav-item .login .hamburg{
+    font-size: 30px;
 }
 #main .nav-item .login a{
     background: #fff;
@@ -128,7 +144,7 @@ a,
     border-radius: 28px;
 } */
 #main #spotlight{
-    padding:140px 0;
+    padding:120px 0 160px ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,19 +166,23 @@ a,
 }
 #main #spotlight .content p{
     font-family: "Poppins-light";
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     line-height: 1.625;
-    margin-top: 30px;
+    margin-top: 20px;
     word-spacing: 3px;
+    width: 89%;
 }
 #main #spotlight .content .content-btn{
     text-align: center;
     margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #main #spotlight .content .content-btn a{ 
     margin-right: 24px;
-    padding: 16px 32px;
+    padding: 18px 28px;
     border-radius: 28px;
 }
 #main #spotlight .content .content-btn a:last-child{ 
@@ -180,7 +200,7 @@ a,
 #main #spotlight .content .content-btn .btn-one i{
     font-size: 20px;
     margin-right: 14px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     color: #000;
 }
 #main #spotlight .content .content-btn .btn-two {
@@ -196,7 +216,8 @@ a,
 #about .container{
     padding: 120px 0 130px;
     display: flex;
-    gap: 30px;
+    gap: 50px;
+    /* justify-content: space-between; */
 }
 #about .container .left{
     width: 50%;
@@ -213,6 +234,7 @@ a,
 }
 #about .container .right h3{
     font-family: "Poppins-bold";
+    margin-top: 50px;
     font-size: 40px;
     width: 70%;
     word-spacing: 2px;
@@ -225,7 +247,7 @@ a,
     line-height: 32px;
     margin-top: 20px;
     font-size: 18px;
-    color: #23272A;
+    color: #5a5b5b;
 }
 
 /* connect...... */
@@ -235,7 +257,7 @@ a,
 #connect .connect-container{
     padding: 120px 0;
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 #connect .connect-container .left{
     width: 50%;
@@ -246,9 +268,10 @@ a,
 #connect .connect-container .left h3{
     font-family: "Poppins-bold";
     font-size: 40px;
-    width: 70%;
+    width: 60%;
     word-spacing: 2px;
     line-height: 1.3;
+    margin-top: 50px;
 }
 #connect .connect-container .left p{
     font-family: "Poppins";
@@ -257,7 +280,7 @@ a,
     line-height: 28px;
     margin-top: 20px;
     font-size: 18px;
-    color: #23272A;
+    color: #5a5b5b;
 }
 #connect .connect-container .right .connect-img{
     width:90%; 
@@ -271,7 +294,7 @@ a,
 #fandom .fandom-container{
     padding: 120px 0 130px;
     display: flex;
-    
+    gap: 50px;
 }
 #fandom .fandom-container .left{
     width: 60%;
@@ -294,6 +317,7 @@ a,
     width: 70%;
     word-spacing: 2px;
     line-height: 1.3;
+    margin-top: 50px;
 }
 #fandom .fandom-container .right p{
     font-family: "Poppins";
@@ -301,7 +325,7 @@ a,
     line-height: 28px;
     margin-top: 20px;
     font-size: 18px;
-    color: #23272A;
+    color: #5a5b5b;
 }
 
 /* tech...... */
@@ -309,7 +333,7 @@ a,
     background-color: #f6f6f6;
 }
 #tech .tech-container{
-    padding: 100px 0;
+    padding: 120px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,8 +358,9 @@ a,
 }
 #tech .tech-container .tech-cntnt p{
     font-size: 18px;
+    text-align: center;
     /* width: 50%; */
-    color: #23272A;
+    color: #5a5b5b;
     font-family: "Poppins" ;
     line-height: 28px;
 }
@@ -347,24 +372,38 @@ a,
     width: 100%;
     display: block;
 }
-#tech .tech-container .effect-img{
-    width: 90%;
-    text-align: center;
-    padding-top: 20px;
-}
-#tech .tech-container .effect-img{
-    width: 100%;
-    display: block;
-}
+/* #tech .tech-container .effcet-img{
+    background-image: url("../images/stars.svg");
+    background-position:120% 100% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 #tech .tech-container .btn-cntnt{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 900px;
+    position: relative;
+    margin-top: 100px;
+}
+#tech .tech-container .effect-img{
+    position: absolute;
+    /* max-width: 110%; */
+    /* min-height: 150px; */
+    width: 300vh;
+    top: -30px;
+    left: -15%;
+    right: 10px;
+
+}
+#tech .tech-container .effect-img{
+    width: 100%;
+    display: block;
 }
 #tech .tech-container .btn-cntnt h3{
     margin-bottom: 40px;
-    font-size: 32px;
+    font-size: 30px;
     font-family: "Poppins-medium";
     line-height: 32px;
 }
@@ -375,7 +414,7 @@ a,
     font-size: 20px;
     line-height: 24px;
     color:#fff;
-    padding: 14px 32px;
+    padding: 12px 28px;
     display: flex;
     align-items: center;
 }
@@ -397,15 +436,20 @@ a,
 }
 #footer .container .top{
     display: flex;
-    gap: 100px;
+    align-items: start;
+    /* justify-content: center; */
+    /* gap: 100px; */
     padding-bottom: 50px;
 }
-#footer .container .top select{
+#footer .container .top .left select{
     color: white;
     background-color: transparent;
     border: none;
-    
 }
+/* #footer .container .top .left{
+    display: flex;
+    flex-direction: column;
+} */
 #footer .container .top .left .social{
     display: flex;
     align-items: center;
@@ -423,8 +467,8 @@ a,
     margin-right: 0px;
 }
 #footer .container .top .right ul li{
-    margin-top: 16px;
-    font-size: 16px;
+    margin-top: 12px;
+    font-size: 14px;
     word-spacing: 5px;
 }
 #footer .container .top .right ul li a{
@@ -439,11 +483,11 @@ a,
     color: #5865F2;
 }
 #footer .container .top .right .li .highlight{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 #footer .container .bottom{
-    padding-top: 32px;
+    padding-top: 35px;
     display: flex;
     justify-content: space-between;
     border-top:1px solid #5865F2;
@@ -461,44 +505,368 @@ a,
 }
 
 /* responsive..... */
-@media (min-width:1440px){
+@media all and (max-width:1440px){
     .wrapper{
         margin: 0 auto;
         max-width: 1180px;
     }
 }
-@media (min-width:1280px){
-    
+@media all and (max-width:1280px){
+    #main .hero-image{
+        background-position: -42% 100%, 134% 100%,50% 100%;
+        background-size:600px,600px,auto;
+    } 
 }
-@media (min-width:1080px){
-    /* .wrapper{
+@media all and (max-width:1080px){
+    .wrapper{
         margin: 0 auto;
-        max-width: 980px;
+        max-width: 1000px;
+    }
+    #main .hero-image{
+        background-position: -65% 100%, 165% 100%,50% 100%;
+        background-size:600px,600px,auto;
+    } 
+    #main #spotlight .content p{
+        font-family: "Poppins";
+        font-size: 18px;
+        width: 98%;
+    }
+    #main #spotlight .content .content-btn a{ 
+        margin-right: 20px;
+    }
+    #about .container .right p{
+        width: 73%;
+    }
+    #connect .connect-container .left p{
+        width: 76%;
+    }
+    #fandom .fandom-container .right h3{
+        width: 83%;
+    }
+    #fandom .fandom-container .right p{
+        width: 90%;
+    }
+    #tech .tech-container .tech-cntnt p{
+        font-size: 16px;
+    }
+}
+@media all and (max-width:980px){
+    .wrapper{
+        margin: 0 auto;
+        max-width: 900px;
+    }
+    .logo{
+        width: 15%;
+     }
+    #main .hero-image{
+        background-image: url("../images/home2.svg");
+        background-position: 10% 100%;
+        background-repeat: no-repeat;
+        background-size: 600px;
+    }
+    #main header{
+        /* position:fixed; */
+    }
+    body.scrolling header {
+        background-color: #5865f2;
+      }
+    #main .nav-item .nav-list ul{
+        display: none;
+    }
+    #main .nav-item .hamburg{
+        display:flex ;
     }
     #main #spotlight{
-        padding: 120px 0;
+        padding-top: 150px;
+        padding-bottom: 330px;
+    }
+    #main #spotlight .content{
+        margin: 0 0 ;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    #main #spotlight .content h1{
+        text-align: left;
+        margin-left: 50px;
     }
     #main #spotlight .content p{
-        font-size: 18px;
+        text-align: left;
+        margin-left: 50px;
+    }
+    #main #spotlight .content .content-btn{
+        text-align: left;
+    }
+    #about .container{
+        flex-direction:column;
+        align-items: center;
+    }
+    #about .container .left{
+        width: fit-content;
+    }
+    #about .container .right{
+        width: fit-content;
+    }
+    #about .container .left .about-img{
+        width:90%; 
+    }
+    #about .container .right h3{
+        margin-top: 10px;
+        font-size: 30px;
+        width: 100%;
         word-spacing: 2px;
-    } */
+        line-height: 1.3;
+    }
+    #about .container .right p{
+        width: 100%;
+        font-size: 17px;
+        line-height: 30px;
+        word-spacing: 1px;
+    }
+    #connect .connect-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #connect .connect-container .left{
+        width: fit-content;
+    }
+    #connect .connect-container .right{
+        width: fit-content;
+    }
+    #connect .connect-container .left h3{
+        margin-top: 10px;
+        font-size: 30px;
+        width: 100%;
+        word-spacing: 2px;
+        line-height: 1.3;
+    }
+    #connect .connect-container .left p{
+        width: 100%;
+        font-size: 17px;
+        line-height: 30px;
+        word-spacing: 1px;
+    }
+    #connect .connect-container .right .connect-img{
+        width:90%; 
+    }
+    #fandom .fandom-container{
+        flex-direction:column;
+        align-items: center;
+    }
+    #fandom .fandom-container .left{
+        width: fit-content;
+    }
+    #fandom .fandom-container .right{
+        width: fit-content;
+    }
+    #fandom .fandom-container .left .about-img{
+        width:90%; 
+    }
+    
+    #fandom .fandom-container .right h3{
+        margin-top: 10px;
+        font-size: 30px;
+        width: 100%;
+        word-spacing: 2px;
+        line-height: 1.3;
+    }
+    #fandom .fandom-container .right p{
+        width: 100%;
+        font-size: 17px;
+        line-height: 30px;
+        word-spacing: 1px;
+    }
+    #tech .tech-container{
+        padding: 50px 0;     
+    }
+    #tech .tech-container .tech-cntnt h3{
+        line-height: 1;
+        letter-spacing: 2px;
+        font-weight:900;
+    }
+    #tech .tech-container .tech-cntnt p{
+        font-size: 16px;
+        font-family: "Poppins-medium";
+    }
+    #tech .tech-container .tech-img{
+        padding-top: 8px;
+    }
+    #footer .container .top .right {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        row-gap: 80px;
+    }
 }
-@media (min-width:980px){
+@media all and (max-width:768px){
+    .wrapper{
+        margin: 0 auto;
+        /* max-width:1000px; */
+        width: 100%;
+        padding: 0 30px;
+    }
+    .logo{
+        width: 18%;
+    }
+    #main .hero-image{
+        background-position: -20% 100%;
+        background-repeat: no-repeat;
+        background-size: 600px;
+    }
+    #main #spotlight{
+        padding-top: 60px;
+    }
+    #main #spotlight .content{
+        /* margin: 0 50px ; */
+        align-items: start;
+        justify-content: start;
+    }
+    #main #spotlight .content h1{
+        text-align: center;
+        font-size: 56px;
+        font-weight: 900;
+        word-spacing: 3px;
+        margin: 0 200px;
+    }
+    #main #spotlight .content p{
+        font-size: 17px;
+        margin: 0 30px;        
+    }
+    #main #spotlight{
+        padding-top: 0px;
+    }
+}
+@media all and (max-width:640px){
+    .wrapper{
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 30px;
+    }
+    .logo{
+        width: 20%;
+    }
+    #main #spotlight .content{
+        padding-top: 50px;
+    }
+    #main #spotlight .content h1{
+        text-align: center;
+        font-size: 30px;
+        margin: 0 ;
+    }
+    #main #spotlight .content p{
+        font-size: 14px;
+        margin: 10px 0 0 ;   
+        line-height: 1.7;           
+    }
+    #main #spotlight .content .content-btn{
+        flex-direction: column;
+        gap: 25px;
+    }
+    #footer .container .top{
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+    #footer .container .top .right ul{
+        margin-right: 0;
+    }
+}
+@media all and (max-width:540px){
+    .logo{
+        width: 25%;
+    }
+    #main .hero-image{
+        background-position: 60% 100%;
+        background-repeat: no-repeat;
+        background-size: 600px;
+    }
+    #main #spotlight .content h1{
+        text-align: center;
+        font-size: 28px;
+        margin: 0 ;
+    }
+    #main #spotlight .content p{
+        font-size: 14px;
+        margin: 10px 0 0 ;   
+        line-height: 2;           
+    }
+    #main #spotlight .content .content-btn .btn-two {
+        display: none;
+    }
+    #main #spotlight{
+        padding-bottom: 300px;
+    }
+    #about .container .right h3{
+        font-size: 24px;
+        word-spacing: 2px;
+        line-height: 1.5;
+        font-family: 900px;
+    }
+    #about .container .right p{
+        font-size: 13px;
+        line-height: 2;
+        word-spacing: 2;
+    }
+    #connect .connect-container .left h3{
+        font-size: 24px;
+        word-spacing: 2px;
+        line-height: 1.5;
+        font-family: 900px;
+    }
+    #connect .connect-container .left p{
+        font-size: 13px;
+        line-height: 2;
+        word-spacing: 2;
+    }
+    #fandom .fandom-container .right h3{
+        font-size: 24px;
+        word-spacing: 2px;
+        line-height: 1.5;
+        font-family: 900px;
+    }
+    #fandom .fandom-container .right p{
+        font-size: 13px;
+        line-height: 2;
+        word-spacing: 2;
+    }
+    #tech .tech-container .tech-cntnt h3{
+        font-size: 30px;
+        margin-bottom: 24px;  
+    }#tech .tech-container .tech-cntnt p{
+        font-size: 12px;
+        font-weight: 900px;
+        line-height: 20px;
+    }
+    #tech .tech-container .tech-img{
+        padding-top: 5px;
+    }
+    #tech .tech-container .btn-cntnt{
+        margin-top: 50px;
+    }
+    #tech .tech-container .btn-cntnt h3{
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    #tech .tech-container .btn-cntnt a{
+        text-align: center;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 12px 18px;
+        align-items: center;
+    }
+    #tech .tech-container .effect-img{
+        /* width: 50%; */
+        
+    
+    }
+}
+@media all and (max-width:480px){
 
 }
-@media (min-width:768px){
-
-}
-@media (min-width:640px){
-
-}
-@media (min-width:540px){
-
-}
-@media (min-width:480px){
-
-}
-@media (min-width:360px){
-
+@media all and (max-width:360px){
+    #main .nav-item .login a{
+        display: none;  
+    }
 }
 

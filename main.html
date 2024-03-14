@@ -8,15 +8,15 @@
     <meta property="og:title" content="Discord | Your Place to Talk and Hang Out"/>
     <meta property="og:description" content=""/>
     <meta property="og:image" content=""/>
-    <link rel="icon" href="images/title-img.png"/>
+    <!-- <link rel="icon" href="images/title-img.png"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Discord | Your Place to Talk and Hang Out</title>
 </head>
 <body>
     <section id="main">
         <div class="hero-image">
-        <section class="wrapper">
             <header>
+        <section class="wrapper">
                 <nav class="nav-item">
                     <div class="logo">
                         <h1><a href="#">
@@ -36,6 +36,9 @@
                     </div>
                     <div class="login">
                         <a href="#">Login</a>
+                        <div class="hamburg">
+                            <span><i class="fa fa-bars"></i></span>
+                        </div>
                     </div>
                     <!-- <div class="hamburg">
                         <input type="checkbox" id="hamburg-toggle">
@@ -68,17 +71,20 @@
                         </nav>
                     </div> -->
                 </nav>
+                </section>
             </header>
+            <section class="wrapper">
         <section id="spotlight">
             <div class="content">
                 <h1>Imagine a place...</h1>
                 <p>...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
                 <div class="content-btn">
-                    <a href="#" class="btn-one"><i class="fa fa-download" style="margin-right: 20px;"></i>Download for Windows</a>
+                    <a href="#" class="btn-one"><i class="fa fa-download"></i>Download for Windows</a>
                     <a href="#" class="btn-two">Open Discord in your browser</a>
                 </div>
             </div>
         </section>
+    </section>
     </section>
 </div>
     </section>
@@ -141,7 +147,7 @@
     </section>
 
                     <!------------ tech  ------------->
-    <section id="tech">
+    <!-- <section id="tech">
         <section class="wrapper">
             <div class="tech-container">
                 <div class="tech-cntnt">
@@ -151,16 +157,20 @@
                 <div class="tech-img">
                     <img src="images/tech.svg" alt="Just Chilling" loading="lazy"/>
                 </div>
+                <div class="btn-cntnt">
+
                 <div class="effect-img">
                     <img src="images/stars.svg" alt="Effect" loading="lazy"/>
                 </div>
-                <div class="btn-cntnt">
-                    <h3>Ready to start your journey</h3>
-                    <a href="#"><span><img src="images/download.svg" alt="Download" loading="lazy"/></span>Download for Windows</a>
-                </div>
+
+                   
+                        <h3>Ready to start your journey</h3>
+                        <a href="#"><span><img src="images/download.svg" alt="Download" loading="lazy"/></span>Download for Windows</a>
+                    </div>
+                
             </div>
         </section>
-    </section>
+    </section> -->
 
                     <!------------ footer ----------->
     <section id="footer">
@@ -249,6 +259,16 @@
             </div>
         </section>
     </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) {
+                document.body.classList.add('scrolling');
+            } else {
+                document.body.classList.remove('scrolling');
+            }
+        });
+    </script>
 </body>
 </html>
 
