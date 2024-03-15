@@ -8,7 +8,9 @@
     <meta property="og:title" content="Discord | Your Place to Talk and Hang Out"/>
     <meta property="og:description" content=""/>
     <meta property="og:image" content=""/>
-    <!-- <link rel="icon" href="images/title-img.png"/> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" href="images/titleImg.jpeg"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Discord | Your Place to Talk and Hang Out</title>
 </head>
@@ -37,22 +39,19 @@
                     <div class="login">
                         <a href="#">Login</a>
                         <div class="hamburg">
-                            <span><i class="fa fa-bars"></i></span>
+                            <span id="hamburg"><i class="fa fa-bars"></i></span>
                         </div>
-                    </div>
-                    <!-- <div class="hamburg">
-                        <input type="checkbox" id="hamburg-toggle">
-                        <label for="hamburg-toggle" ><i class="fa fa-bars"></i></label>
-                        <nav class="hamburg-item">
+                    </div> 
+                    <!-- hamsberg -->
+                         <nav class="hamburg-item" id="hamburg-item">
                             <div class="top">
                                 <div class="hamburg-logo">
                                     <h1><a href="#">
-                                        <img src="/images/hamburg-logo.svg" alt="Logo"/>
+                                        <img src="images/hamburg-logo.svg" alt="Logo"/>
                                     </a></h1>
                                 </div>
-                                <div class="hamburg-login">Login</div class="hamburg-login">
-                                <span>&#10006;</span>
-                            </div>
+                                <span class="close">&times;</span>
+                            </div> 
                             <div class="bottom">
                                 <div class="hamburg-list">
                                     <ul>
@@ -68,8 +67,8 @@
                                     <a href="#" class="btn-dwnld"><i class="fa fa-download" style="margin-right: 20px;"></i>Download</a>
                                 </div>
                             </div>
-                        </nav>
-                    </div> -->
+                        </nav> 
+                    <!-- hamsberg -->
                 </nav>
                 </section>
             </header>
@@ -92,7 +91,7 @@
                 <!----------- about section ----------->
     <section id="about">
         <section class="wrapper">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="2000">
                 <div class="left">
                     <div class="about-img">
                         <img src="images/about.svg" alt="About Us" loading="lazy"/>
@@ -111,7 +110,7 @@
                 <!---------------- connect ------------->
     <section id="connect">
         <section class="wrapper">
-            <div class="connect-container">
+            <div class="connect-container" data-aos="fade-up" data-aos-duration="2000">
                 <div class="left">
                     <div class="connect-cntnt">
                         <h3>Where hanging out is easy</h3>
@@ -130,7 +129,7 @@
                     <!----------- fandom ------------>
     <section id="fandom">
         <section class="wrapper">
-            <div class="fandom-container">
+            <div class="fandom-container" data-aos="fade-up" data-aos-duration="2000">
                 <div class="left">
                     <div class="fandom-img">
                         <img src="images/fandom.svg" alt="Fandom" loading="lazy"/>
@@ -158,16 +157,12 @@
                     <img src="images/tech.svg" alt="Just Chilling" loading="lazy"/>
                 </div>
                 <div class="btn-cntnt">
-
-                <div class="effect-img">
-                    <img src="images/stars.svg" alt="Effect" loading="lazy"/>
-                </div>
-
-                   
+                    <div class="effect-img">
+                        <img src="images/stars.svg" alt="Effect" loading="lazy"/>
+                    </div>
                         <h3>Ready to start your journey</h3>
                         <a href="#"><span><img src="images/download.svg" alt="Download" loading="lazy"/></span>Download for Windows</a>
-                    </div>
-                
+                </div>
             </div>
         </section>
     </section> -->
@@ -178,23 +173,53 @@
             <div class="container">
                 <div class="top">
                     <div class="left">
-                        <!-- <div class="language">
-                            <input type="checkbox">
-                        </div> -->
                         <select id="language-select">
                             <option value="en" class="main">
-                                <img src="images/flag-en.png" alt="English"/>
+                                <div class="flag">
+                                    <img src="images/flag-en.png" alt="Flag-en"/>
+                                </div>
                                 English</option>
-                            <option value="en-uk">English(UK)</option>
-                            <option value="fr">Francais</option>
-                            <option value="es">Espanol</option>
-                            <option value="de">Deutsch</option>
-                            <option value="da">Dansk</option>
-                            <option value="hu">Magyar</option>
-                            <option value="nl">Nedarlands</option>
-                            <option value="no">Norsk</option>
-                            <option value="hr">Hrvatski</option>
+                                <option value="en" data-flag="us">English</option>
+                            <option value="en-uk">
+                                <img src="images/flag-en.png" alt="English (UK) Flag"/>
+                                English(UK)</option>
+                            <option value="fr">
+                                <img src="images/flag-en.png" alt="Francais Flag"/>
+                                Francais</option>
+                            <option value="es">
+                                <img src="images/flag-en.png" alt="Espanol Flag"/>
+                                Espanol</option>
+                            <option value="de">
+                                <img src="images/flag-en.png" alt="Deutsch Flag"/>
+                                Deutsch</option>
+                            <option value="da">
+                                <img src="images/flag-en.png" alt="Dansk Flag"/>
+                                Dansk</option>
+                            <option value="hu">
+                                <img src="images/flag-en.png" alt=" Magyar Flag"/>
+                                Magyar</option>
+                            <option value="nl">
+                                <img src="images/flag-en.png" alt="Nedarlands Flag"/>
+                                Nedarlands</option>
+                            <option value="no">
+                                <img src="images/flag-en.png" alt="Norsk Flag"/>
+                                Norsk</option>
+                            <option value="hr">
+                                <img src="images/flag-en.png" alt=" Hrvatski Flag"/>
+                                Hrvatski</option>
                         </select>
+
+                        <!-- <ul class="language-select">
+                            <li><a href="#">Čeština</a></li>
+                            <li><a href="#">Dansk</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">English (UK)</a></li>
+                            <li><a href="#">Español</a></li>
+                            <li><a href="#">Español (América Latina)</a></li>
+                            <li><a href="#">Français</a></li>
+                        </ul> -->
+
                         <div class="social">
                             <a href="https://twitter.com/discord" target="_blank"><img src="images/twitter.svg" alt="Twitter" loading="lazy"/></a>
                             <a href="https://www.instagram.com/discord/" target="_blank"></a><img src="images/Instagram.svg" alt="Instagram" loading="lazy"/></a>
@@ -268,6 +293,22 @@
                 document.body.classList.remove('scrolling');
             }
         });
+
+        const hamburg = document.querySelector(".hamburg");
+        const hamburgItem = document.querySelector(".hamburg-item");
+        hamburg.addEventListener('click',() => {
+            hamburg.classList.toggle('active');
+            hamburgItem.classList.toggle('active');
+            // document.body.style.overflow = 'hidden';
+        })
+        const close = document.querySelector('.close');
+        close.addEventListener('click',() => {
+            hamburg.classList.remove('active');
+            hamburgItem.classList.remove('active');
+            // document.body.style.overflow = 'auto';
+        })
+
+        AOS.init();
     </script>
 </body>
 </html>
