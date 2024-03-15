@@ -91,12 +91,10 @@ a,
 #main .nav-item .login a{
     background: #fff;
     color: black;
-    /* padding: 13px; */
     padding: 12px 15px;
     font-size: 14px;
     border-radius: 40px;
     font-weight: 700;
-    /* font-family: "Poppins-medium";    */
 }
 #main .nav-item .login a:hover{
     box-shadow:  2px 8px 5px rgba(32, 32, 32, 0.2);
