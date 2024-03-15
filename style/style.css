@@ -91,9 +91,12 @@ a,
 #main .nav-item .login a{
     background: #fff;
     color: black;
-    padding: 13px;
-    border-radius: 20px;
-    font-family: "Poppins-medium";   
+    /* padding: 13px; */
+    padding: 12px 15px;
+    font-size: 14px;
+    border-radius: 40px;
+    font-weight: 700;
+    /* font-family: "Poppins-medium";    */
 }
 #main .nav-item .login a:hover{
     box-shadow:  2px 8px 5px rgba(32, 32, 32, 0.2);
@@ -177,9 +180,7 @@ a,
 #about .container{
     padding: 120px 0 130px;
     display: flex;
-    gap: 50px;
-    
-    /* justify-content: space-between; */
+    gap: 50px;    
 }
 #about .container .left{
     width: 50%;
@@ -580,11 +581,13 @@ select {
         flex-direction: column;
         justify-content: center;
         background-color: #fff;
-        padding: 24px 24px 50px 24px;
+        padding: 24px 24px 50px 25px;
         position: fixed;
         right:-10px;
         top: 1px;
-        transition: 0.3s;
+        transform: translate(0px) translate(0px);
+        transition:  300ms ease 0s;
+        opacity: 1;
         gap: 0;
         border-top-left-radius: 10px;
         height: 100vh;
@@ -598,9 +601,11 @@ select {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-top: 40px;
     }
     #main .hamburg-item .top .hamburg-logo{
-        width: 10%;
+        width: 40%;
+        filter: invert();
     }
     #main .hamburg-item .top .hamburg-login{
         color: #000;
@@ -613,7 +618,7 @@ select {
         padding-bottom: 20px;
     }
     #main .hamburg-item .bottom{
-        border-top:1px solid #333434;
+        border-top:1px solid #111;
         padding: 20px 0 10px;
         line-height: 40px;
     }
@@ -623,9 +628,20 @@ select {
     }
     #main .hamburg-item .bottom .hamburg-list ul li a{
        font-size: 16px;
-       line-height: 20px;
+       line-height: 24px;
        font-family: "Poppins-medium";
-       color:#000
+       color:#000;
+       margin-bottom: 50px;
+       padding: 8px 16px;
+    }
+    #main .hamburg-item .bottom .hamburg-list ul li.arrow a{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    #main .hamburg-item .bottom .hamburg-list ul li.arrow a i{
+        font-size: 20px;
+        font-weight: 900;
     }
     #main .hamburg-item .bottom .hamburg-dwnld{
         margin: 30px 0 60px ;
@@ -671,7 +687,7 @@ select {
         width: fit-content;
     }
     #about .container .left .about-img{
-        width:90%; 
+        width:80%; 
     }
     #about .container .right h3{
         margin-top: 10px;
@@ -710,7 +726,7 @@ select {
         word-spacing: 1px;
     }
     #connect .connect-container .right .connect-img{
-        width:90%; 
+        width:80%; 
     }
     #fandom .fandom-container{
         flex-wrap: wrap;
@@ -723,7 +739,7 @@ select {
         width: fit-content;
     }
     #fandom .fandom-container .left .about-img{
-        width:90%; 
+        width:80%; 
     }
     
     #fandom .fandom-container .right h3{
@@ -783,6 +799,27 @@ select {
     }
     #main #spotlight{
         padding-top: 0px;
+    }
+    #about .container .left .about-img{
+        width:90%; 
+    }
+    #about .container{
+        padding: 60px 0 100px;
+           
+    }
+    #connect .connect-container{
+        padding: 60px 0;
+        gap: 0;
+    }
+    #connect .connect-container .right .connect-img{
+        width:90%; 
+    }
+    #fandom .fandom-container{
+        padding: 60px 0 100px;
+        gap: 0;
+    }
+    #fandom .fandom-container .left .about-img{
+        width:90%; 
     }
 }
 @media all and (max-width:640px){
