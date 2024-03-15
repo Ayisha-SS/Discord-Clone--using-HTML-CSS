@@ -6,32 +6,32 @@
     font-family:"Poppins",sans-serif  ;
     cursor: default;
 }
-a,
- .logo{
+a:hover,
+ .logo:hover{
     cursor: pointer;
 }
 @font-face {
-    font-family:"Poppins" ;
+    font-family:"Poppins";
     src: url("/font/poppins/poppins-regular-webfont.woff2") format("woff2"),
          url("/font/poppins/poppins-regular-webfont.woff") format("woff"),
 }
 @font-face {
-    font-family:"Poppins-bold" ;
+    font-family:"Poppins-bold";
     src: url("/font/poppins/poppins-bold-webfont.woff2") format("woff2"),
          url("/font/poppins/poppins-bold-webfont.woff") format("woff"),
 }
 @font-face {
-    font-family:"Poppins-extrabold" ;
+    font-family:"Poppins-extrabold";
     src: url("/font/poppins/poppins-extrabold-webfont.woff2") format("woff2"),
          url("/font/poppins/poppins-extrabold-webfont.woff") format("woff"),
 }
 @font-face {
-    font-family:"Poppins-light" ;
+    font-family:"Poppins-light";
     src: url("/font/poppins/poppins-light-webfont.woff2") format("woff2"),
          url("/font/poppins/poppins-light-webfont.woff") format("woff"),
 }
 @font-face {
-    font-family:"Poppins-medium" ;
+    font-family:"Poppins-medium";
     src: url("/font/poppins/poppins-medium-webfont.woff2") format("woff2"),
          url("/font/poppins/poppins-medium-webfont.woff") format("woff"),
 }
@@ -41,6 +41,7 @@ a,
 }
 .logo{
    width: 12%;
+   cursor: pointer;
 }
 #main{
     color: #fff;
@@ -98,6 +99,7 @@ a,
 }
 #main .nav-item .login a:hover{
     box-shadow:  2px 8px 5px rgba(32, 32, 32, 0.2);
+    color: #1629f7;
 }
 #main .nav-item .hamburg{
     display: none;
@@ -307,6 +309,7 @@ a,
     background-color: transparent;
     border: none;
     padding: 10px 10px;
+    cursor: pointer;
 }
 #footer .container .top .left #language-select option.main{
     color: #fff;
@@ -350,6 +353,9 @@ select {
     justify-content: center;
     margin-top: 48px;
     gap: 10px;
+}
+#footer .container .top .left .social a:hover{
+    cursor: pointer;
 }
 #footer .container .top .right {
     display: flex;
